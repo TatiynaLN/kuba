@@ -7,6 +7,9 @@ a{
     color: inherit;
     display: inline-block;
 }
+ul{
+    list-style: none;
+}
 body{
     color: #505050;
     font-family: 'Lato', sans-serif;
@@ -23,7 +26,6 @@ body{
 }
 .header{
     .header__top{
-        background-image: url('../img/header-fon.png');
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
@@ -148,13 +150,34 @@ body{
 }
 .about__item{
     margin-bottom: 100px;
+    padding: 70px 0;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .about__box{
-    padding: 33px 40px 18px;
+    padding: 33px 40px;
     background-color: #ffffff;
-    max-width: 470px;
+    max-width: 370px;
     position: relative;
+    &::after,&::before{
+        content: "";
+        position: absolute;
+        width: 33px;
+        height: 33px;
+    }
+    &::before{
+        background-image: url('../img/decor-left.svg');
+        top: 19px;
+        left: 19px;
+    }
+    &::after{
+        border-bottom: 2px solid #ECB84C;
+        border-right: 2px solid #ECB84C;
+        right: 19px;
+        bottom: 19px;
+    }
 }
+
 .about__box-title{
     font-size: 24px;
     line-height: 25px;
@@ -162,4 +185,102 @@ body{
     font-family: "Georgia";
     margin-bottom: 20px;
     
+}
+.about__item:nth-child(even){
+    background-position: left;
+}
+/*even четное , odd не четное*/
+.about__item:nth-child(even) .about__box{
+    margin-left: auto;
+}
+.about__item:nth-child(even) .about__box::before{
+    right: 19px;
+    left: auto;
+    background-image: url('../img/decor-right.svg');
+}
+.about__item:nth-child(even) .about__box::after{
+    left: 19px;
+    border-right: none;
+    border-left: 2px solid #ECB84C;
+}
+.photo{
+    padding: 80px 0;
+
+    .photo__title{
+        margin-bottom: 42px;
+    }
+    .photo__text{
+        padding-bottom: 48px;
+        margin-bottom: 56px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 270px;
+            height: 1px;
+            background-color: rgba(208, 212,216, .5);
+            bottom: 0;
+            margin: 0 auto;
+        }
+    }
+}
+.photo__slider{
+    max-width: 640px;
+    margin: 0 auto;
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        font-size: 0;
+
+        border: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+/* Стрелка влево */
+    .slick-arrow.slick-prev {
+        left: 0;
+        background: url('../img/Arrow-left.svg') 0 0 / 100% no-repeat;
+        outline: none;
+        left: -20px;
+    }
+  /* Стрелка вправо */
+    .slick-arrow.slick-next { 
+        right: 0;
+        background: url('../img/Arrow-right.svg') 0 0 / 100% no-repeat;
+        right: -20px;
+        outline: none;
+  }
+}
+.footer{
+    background: #f8f8f8;
+    padding: 55px 0 32px;
+
+    .footer__item-title{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4E5665;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .footer__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__item-link{
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 8px;
+    }
+    .footer_copy{
+        padding-top: 40px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
 }

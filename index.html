@@ -7,14 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="header__top">
+        <div class="header__top" style="background-image: url('img/header-fon.png');">
             <div class="header__top-inner">
                 <h1 class="heder__title"> Куба
                 </h1>
@@ -96,7 +99,7 @@
                     вы можете распрощаться с повседневными предположениями
                     и ожидать неожиданностей.
                 </p>
-                <div class="about__item">
+                <div class="about__item" style="background-image: url('img/about-1.jpg');">
                     <div class="about__box">
                         <h3 class="about__box-title">
                             Историческое наследие
@@ -111,7 +114,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="about__item">
+                <div class="about__item" style="background-image: url('img/about-2.jpg');">
                     <div class="about__box">
                         <h3 class="about__box-title">
                             Удивительные пляжи
@@ -129,6 +132,79 @@
             </div>
         </div>
     </section>
+    <section class="photo">
+        <div class="container">
+            <h2 class="photo__title title">Куба в фото</h2>
+            <p class="photo__text container-content">
+                Когда вы думаете о Карибском море, вы, вероятно, думаете о Кубе. Это одинокая акация, вырисовывающаяся
+                на фоне горизонта, уходящего в вечность. Это снежная гора почти на экваторе и в пределах видимости
+                суровых пустынь. Это пышная, покрытая пальмами береговая линия океана, это Великая рифтовая долина,
+                которая когда-то угрожала разорвать континент на части, и это густые леса, напоминающие сердце
+                континента.
+            </p>
+            <div class="photo__slider">
+                <img class="photo__img" src="img/photo-slider.jpg" alt="">
+                <img class="photo__img" src="img/photo-slider.jpg" alt="">
+                <img class="photo__img" src="img/photo-slider.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+
+                <div class="footer__item">
+                    <h5 class="footer__item-title">КОМПАНИЯ</h5>
+                    <ul class="footer__item-list">
+                        <li><a class="footer__item-link" href="#">О компании</a></li>
+                        <li><a class="footer__item-link" href="#">Работай с нами</a></li>
+                        <li><a class="footer__item-link" href="#">Пресса</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h5 class="footer__item-title">ДЕТАЛИ</h5>
+                    <ul class="footer__item-list">
+                        <li><a class="footer__item-link" href="#">Бронирование</a></li>
+                        <li><a class="footer__item-link" href="#">Оплата</a></li>
+                        <li><a class="footer__item-link" href="#">Условия</a></li>
+                        <li><a class="footer__item-link" href="#">Политика</a></li>
+                        <li><a class="footer__item-link" href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h5 class="footer__item-title">КОНТАКТЫ</h5>
+                    <ul class="footer__item-list">
+                        <li><a class="footer__item-link" href="#">Свяжись с нами</a></li>
+                        <li><a class="footer__item-link" href="#">Facebook</a></li>
+                        <li><a class="footer__item-link" href="#">Instagram</a></li>
+                        <li><a class="footer__item-link" href="#">YouTube</a></li>
+                        <li><a class="footer__item-link" href="#">Почта</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h5 class="footer__item-title">БЛОГ</h5>
+                    <ul class="footer__item-list">
+                        <li><a class="footer__item-link" href="#">Идеи для фотосессии</a></li>
+                        <li><a class="footer__item-link" href="#">Свадьба на Кубе</a></li>
+                        <li><a class="footer__item-link" href="#">ТОП 10 ресторанов Кубы</a></li>
+                        <li><a class="footer__item-link" href="#">Лучшие достопримечательности Гаванны</a></li>
+                        <li><a class="footer__item-link" href="#">Кубинская кухня</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <p class="footer__copy">
+                © 2020 Все права защищены
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
