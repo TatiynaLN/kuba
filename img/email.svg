@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" width="16" height="13">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #d3d3d3 } 
+	</style>
+	<path id="Shape copy 5" fill-rule="evenodd" class="shp0" d="M14.4 0C15.28 0 16 0.73 16 1.62L16 11.37C16 12.27 15.28 13 14.4 13L1.6 13C0.72 13 0 12.27 0 11.37L0 1.62C0 0.73 0.72 0 1.6 0L14.4 0ZM14.4 3.25L14.4 1.62L8 5.69L1.6 1.62L1.6 3.25L8 7.31L14.4 3.25Z" />
+</svg>
