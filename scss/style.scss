@@ -263,10 +263,21 @@ body{
         display: none;
     }
 }
-
+.about__dot--1{
+    top: 190px;
+    left: 150px;
+}
+.about__dot--2{
+    top: 188px;
+    left: 495px;
+}
 .about__dot--3{
     top: 147px;
     right: 400px;
+}
+.about__dot--4{
+    bottom: 28px;
+    right: 350px;
 }
 .photo{
     padding: 80px 0;
