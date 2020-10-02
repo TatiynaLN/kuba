@@ -664,12 +664,16 @@ body {
     width: 10px;
     height: 10px;
     background-color: #ECB84C;
+    outline: none;
+    border: none;
     border-radius: 50%;
   }
   .photo__slider .slick-dots li.slick-active button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    outline: none;
+    border: none;
   }
 }
 
