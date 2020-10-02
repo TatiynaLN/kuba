@@ -265,9 +265,14 @@ body {
 }
 
 .about__images-box {
+  max-width: 100%;
   padding-top: 73px;
   margin-bottom: 52px;
   position: relative;
+}
+
+.about__images-box img {
+  max-width: 100%;
 }
 
 .about__dot {
@@ -365,6 +370,8 @@ body {
   background-color: rgba(208, 212, 216, 0.5);
   bottom: 0;
   margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .photo__slider {
@@ -494,9 +501,70 @@ body {
   display: none;
 }
 
+@media (max-width: 1300px) {
+  .about__dot--1 {
+    top: 140px;
+    left: 75px;
+  }
+  .about__dot--2 {
+    top: 188px;
+    left: 360px;
+  }
+  .about__dot--3 {
+    top: 125px;
+    right: 280px;
+  }
+  .about__dot--4 {
+    bottom: 28px;
+    right: 220px;
+  }
+  .footer__item--company {
+    width: 140px;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+}
+
 @media (max-width: 840px) {
+  .about__item {
+    padding: 382px 0 70px;
+    background-position: top;
+    margin-bottom: 0;
+  }
   .about__box {
     margin: 0 auto;
+  }
+  .about__item:nth-child(even) {
+    background-position: top;
+  }
+  .about__dot {
+    display: none;
+  }
+  .about__images-box {
+    padding-top: 0;
+  }
+  .photo__slider {
+    /* Стрелка влево */
+    /* Стрелка вправо */
+  }
+  .photo__slider .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .photo__slider .slick-arrow.slick-prev {
+    left: 20px;
+  }
+  .photo__slider .slick-arrow.slick-next {
+    right: 15px;
+  }
+  .footer__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__item {
+    width: 40%;
+    margin-bottom: 30px;
+    padding-right: 25px;
   }
 }
 
@@ -568,6 +636,51 @@ body {
   }
   .reason__statistics-item {
     margin-bottom: 35px;
+  }
+  .photo__slider {
+    /* Элемент точки */
+    /* Активная точка */
+  }
+  .photo__slider .slick-arrow {
+    display: none;
+  }
+  .photo__slider .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .photo__slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+  }
+  .photo__slider .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ECB84C;
+    border-radius: 50%;
+  }
+  .photo__slider .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 470px) {
+  .footer__items {
+    display: block;
+  }
+  .footer__item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
